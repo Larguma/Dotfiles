@@ -35,13 +35,8 @@
       iwgtk
       nixd
       nixfmt-rfc-style
-
-      (nerdfonts.override {
-        fonts = [
-          "CascadiaCode"
-          "Noto"
-        ];
-      })
+      nerd-fonts.noto
+      nerd-fonts.caskaydia-cove
 
       wget
       curl
