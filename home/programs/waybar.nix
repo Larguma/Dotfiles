@@ -67,8 +67,8 @@
         format-muted = " ";
         on-click = "pwvucontrol";
         on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
-        on-scroll-up = "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+";
-        on-scroll-down = "wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-";
+        on-scroll-up = "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+";
+        on-scroll-down = "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%-";
         scroll-step = 1;
         format-icons = {
           headphone = " ";

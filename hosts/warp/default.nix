@@ -88,6 +88,8 @@
   fonts.fontDir.enable = true;
   catppuccin.enable = true;
 
+  hardware.opentabletdriver.enable = true;
+
   security.rtkit.enable = true;
   security.pam.services.hyprlock = { };
 
