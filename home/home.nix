@@ -62,6 +62,7 @@
 
   programs.home-manager.enable = true;
   programs.nix-index.enable = true;
+  programs.java.enable = true;
 
   home.stateVersion = "24.11";
 }
