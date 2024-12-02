@@ -19,6 +19,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     hyprland.url = "github:hyprwm/Hyprland";
     catppuccin.url = "github:catppuccin/nix";
   };
@@ -27,6 +31,7 @@
     inputs@{
       nixpkgs,
       home-manager,
+      nix-index-database,
       hyprland,
       catppuccin,
       ...
@@ -48,6 +53,7 @@
 
             hyprland.nixosModules.default
             catppuccin.nixosModules.catppuccin
+            nix-index-database.nixosModules.nix-index
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;

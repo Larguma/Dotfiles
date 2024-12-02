@@ -66,6 +66,7 @@
   services.cliphist.enable = true;
 
   programs.home-manager.enable = true;
+  programs.nix-index.enable = true;
 
   home.stateVersion = "24.11";
 }

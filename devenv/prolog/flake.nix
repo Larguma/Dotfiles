@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self , nixpkgs ,... }: let
+  outputs = { nixpkgs ,... }: let
     system = "x86_64-linux";
   in {
     devShells."${system}".default = let
