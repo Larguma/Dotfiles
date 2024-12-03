@@ -20,6 +20,7 @@
         "waybar"
         "iwgtk -i"
         "seafile-applet"
+        "wl-paste --watch cliphist store"
       ];
 
       input = {

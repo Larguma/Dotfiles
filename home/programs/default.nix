@@ -7,6 +7,7 @@
     ./kitty.nix
     ./micro.nix
     ./rofi.nix
+    ./spotify.nix
     ./swaync.nix
     ./waybar.nix
   ];
