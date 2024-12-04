@@ -53,7 +53,6 @@
 
             hyprland.nixosModules.default
             catppuccin.nixosModules.catppuccin
-            nix-index-database.nixosModules.nix-index
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
@@ -62,6 +61,7 @@
                 imports = [
                   ./home/home.nix
                   catppuccin.homeManagerModules.catppuccin
+                  nix-index-database.hmModules.nix-index
                 ];
               };
               home-manager.extraSpecialArgs = specialArgs;

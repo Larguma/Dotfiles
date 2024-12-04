@@ -29,7 +29,7 @@
       onlyoffice-bin
       nemo-with-extensions
       nemo-fileroller
-      seafile-client
+      wireguard-tools
 
       wl-clipboard
       iwgtk
@@ -44,6 +44,7 @@
       pwvucontrol
       eza # ls replacment
       btop
+      brightnessctl
 
       hyprshot
       hyprcursor
