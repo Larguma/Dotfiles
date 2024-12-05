@@ -2,11 +2,11 @@
   imports = [
     ./hypr
     ./wlogout
+    ./rofi
 
     ./fish.nix
     ./kitty.nix
     ./micro.nix
-    ./rofi.nix
     ./spotify.nix
     ./swaync.nix
     ./waybar.nix
