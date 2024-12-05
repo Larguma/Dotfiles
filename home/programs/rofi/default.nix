@@ -22,6 +22,5 @@
       drun-show-actions = false;
       drun-url-launcher = "xdg-open";
     };
-    theme = "./themes/spotlight.rasi";
   };
 }
