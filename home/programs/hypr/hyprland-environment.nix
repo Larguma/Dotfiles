@@ -7,6 +7,7 @@
       BROWSER = "vivaldi";
       TERMINAL = "kitty";
 
+      XCURSOR_THEME = "catppuccin-mocha-mauve-cursors";
       XCURSOR_SIZE = "24";
       GDK_BACKEND = "wayland,x11,*";
       SDL_VIDEODRIVER = "wayland";

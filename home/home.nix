@@ -60,6 +60,7 @@
 
   services.blueman-applet.enable = true;
   services.cliphist.enable = true;
+  services.pass-secret-service.enable = true;
 
   programs.home-manager.enable = true;
   programs.nix-index.enable = true;
