@@ -84,7 +84,7 @@
           passes = 1;
         };
         rounding = 15;
-        active_opacity = 0.98;
+        active_opacity = 1;
         inactive_opacity = 0.9;
         fullscreen_opacity = 1;
       };
