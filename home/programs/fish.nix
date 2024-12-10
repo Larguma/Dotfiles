@@ -13,6 +13,7 @@
 
       gitconfig = "git config user.name 'Larguma' && git config user.email 'larguma@hotmail.fr'";
       githeia = "git config user.name 'Baptiste Roland' && git config user.email 'baptiste.roland@hes-so.ch'";
+      gundo = "git add .; git commit --amend --no-edit; git push --force";
 
       yy = "sudo nix flake update --flake ~/.dotfiles && sudo nixos-rebuild switch --flake ~/.dotfiles/.#warp --upgrade-all && nix store diff-closures /run/*-system";
       rb = "sudo nixos-rebuild switch --flake ~/.dotfiles/.#warp && nix store diff-closures /run/*-system";
