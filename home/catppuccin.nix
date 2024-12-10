@@ -1,10 +1,10 @@
 { ... }:
 {
   catppuccin.enable = true;
-  catppuccin.pointerCursor.enable = true;
+  # catppuccin.pointerCursor.enable = true;
+  gtk.catppuccin.enable = true;
   gtk.catppuccin.gnomeShellTheme = true;
   gtk.catppuccin.icon.enable = true;
-  gtk.catppuccin.enable = true;
   programs.btop.catppuccin.enable = true;
   programs.fish.catppuccin.enable = true;
   programs.hyprlock.catppuccin.enable = true;

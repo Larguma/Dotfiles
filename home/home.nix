@@ -16,9 +16,6 @@
     homeDirectory = "/home/larguma";
   };
 
-  fonts.fontconfig.enable = true;
-  gtk.enable = true;
-
   home.packages = (
     with pkgs;
     [
@@ -27,9 +24,8 @@
       vscode
       vivaldi
       onlyoffice-bin
-      nemo-with-extensions
-      nemo-fileroller
       wireguard-tools
+      yazi
 
       wl-clipboard
       iwgtk
@@ -57,6 +53,9 @@
       color-scheme = "prefer-dark";
     };
   };
+
+  fonts.fontconfig.enable = true;
+  gtk.enable = true;
 
   services.blueman-applet.enable = true;
   services.cliphist.enable = true;

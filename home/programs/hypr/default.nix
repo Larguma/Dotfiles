@@ -190,7 +190,7 @@
       # Apps
       bind = [
         "$mainMod, return, exec, $term"
-        "$mainMod, E, exec, nemo"
+        "$mainMod, E, exec, kitty yazi"
         "$mainMod, W, exec, vivaldi"
         "$mainMod, period, exec, code ~/.dotfiles"
         "CONTROL SHIFT, ESCAPE, exec, $scriptsDir/top_launch.sh"

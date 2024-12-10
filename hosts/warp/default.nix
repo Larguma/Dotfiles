@@ -139,6 +139,7 @@
       "\${HOME}/.local/bin"
     ];
     NIXPKGS_ALLOW_UNFREE = "1";
+    EDITOR = "micro";
   };
 
   #Garbage colector
