@@ -22,6 +22,8 @@
           packages =
             with pkgs;
             [
+              stdenv.cc.cc.lib
+              extra-cmake-modules
               poetry
               python3
             ]
@@ -30,6 +32,8 @@
               pip
               venvShellHook
             ]);
+
+          LD_LIBRARY_PATH = "${stdenv.cc.cc.lib}/lib";
 
           shellHook = ''
             python --version
