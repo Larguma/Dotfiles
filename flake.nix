@@ -70,6 +70,34 @@
             }
           ];
         };
+
+        vacuum = nixpkgs.lib.nixosSystem rec {
+          inherit system;
+
+          specialArgs = {
+            inherit hyprland;
+            inherit inputs;
+          };
+          modules = [
+            ./hosts/vacuum
+
+            hyprland.nixosModules.default
+            catppuccin.nixosModules.catppuccin
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.larguma = {
+                imports = [
+                  ./home/home.nix
+                  catppuccin.homeManagerModules.catppuccin
+                  nix-index-database.hmModules.nix-index
+                ];
+              };
+              home-manager.extraSpecialArgs = specialArgs;
+            }
+          ];
+        };
       };
     };
 }
