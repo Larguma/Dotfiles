@@ -26,6 +26,7 @@
       onlyoffice-bin
       wireguard-tools
       yazi
+      prismlauncher
 
       wl-clipboard
       iwgtk
@@ -41,6 +42,7 @@
       eza # ls replacment
       btop
       brightnessctl
+      unrar
 
       hyprshot
       hyprcursor

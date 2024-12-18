@@ -3,8 +3,8 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./virtualisation
-    ./greeter
+    ../../virtualisation
+    ../../greeter
   ];
 
   # Bootloader.
@@ -141,6 +141,13 @@
     NIXPKGS_ALLOW_UNFREE = "1";
     EDITOR = "micro";
   };
+
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 16 * 1024; # 16GB
+    }
+  ];
 
   #Garbage colector
   nix.gc = {
