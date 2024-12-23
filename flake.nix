@@ -27,6 +27,7 @@
     };
     hyprland.url = "github:hyprwm/Hyprland";
     catppuccin.url = "github:catppuccin/nix";
+    nix-alien.url = "github:thiagokokada/nix-alien";
   };
 
   outputs =
@@ -36,6 +37,7 @@
       nix-index-database,
       hyprland,
       catppuccin,
+      nix-alien,
       ...
     }:
     let
@@ -57,6 +59,9 @@
             catppuccin.nixosModules.catppuccin
             home-manager.nixosModules.home-manager
             {
+              programs.nix-ld.enable = true;
+              environment.systemPackages =  [ nix-alien.packages.${system}.nix-alien ];
+
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.larguma = {
@@ -85,6 +90,9 @@
             catppuccin.nixosModules.catppuccin
             home-manager.nixosModules.home-manager
             {
+              programs.nix-ld.enable = true;
+              environment.systemPackages = [ nix-alien.packages.${system}.nix-alien ];
+              
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.larguma = {

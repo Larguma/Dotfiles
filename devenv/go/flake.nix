@@ -27,7 +27,7 @@
           ];
 
           shellHook = ''
-            gprolog --version
+            go --version
           '';
         };
     };

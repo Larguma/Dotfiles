@@ -6,7 +6,7 @@
   };
 
   outputs =
-    { nixpkgs, ... }:
+    { stdenv, nixpkgs, ... }:
     let
       system = "x86_64-linux";
     in

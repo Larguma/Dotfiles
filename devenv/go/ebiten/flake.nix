@@ -20,10 +20,17 @@
             xorg.libXinerama
             xorg.libXi
             xorg.libXxf86vm
-          ];
+            python3
+          ]
+          ++ (with python3Packages; [
+              ipykernel
+              pip
+              venvShellHook
+            ]);
 
           shellHook = ''
             export LD_LIBRARY_PATH=${pkgs.wayland}/lib:${pkgs.lib.getLib pkgs.libGL}/lib:${pkgs.lib.getLib pkgs.libGL}/lib:$LD_LIBRARY_PATH
+            python --version
           '';
         };
       }
