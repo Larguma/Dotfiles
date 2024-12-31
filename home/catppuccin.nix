@@ -1,15 +1,19 @@
 { ... }:
 {
   catppuccin.enable = true;
-  # catppuccin.pointerCursor.enable = true;
-  gtk.catppuccin.enable = true;
-  gtk.catppuccin.gnomeShellTheme = true;
-  gtk.catppuccin.icon.enable = true;
-  programs.btop.catppuccin.enable = true;
-  programs.fish.catppuccin.enable = true;
-  programs.hyprlock.catppuccin.enable = true;
-  programs.kitty.catppuccin.enable = true;
-  programs.micro.catppuccin.enable = true;
-  qt.style.catppuccin.enable = true;
-  wayland.windowManager.hyprland.catppuccin.enable = true;
+  catppuccin.btop.enable = true;
+  catppuccin.cursors.enable = true;
+  catppuccin.dunst.enable = true;
+  catppuccin.fish.enable = true;
+  catppuccin.gtk.enable = true;
+  catppuccin.gtk.gnomeShellTheme = true;
+  catppuccin.gtk.icon.enable = true;
+  catppuccin.hyprland.enable = true;
+  catppuccin.hyprlock.enable = true;
+  catppuccin.kitty.enable = true;
+  catppuccin.kvantum.enable = true;
+  catppuccin.micro.enable = true;
+  catppuccin.waybar.enable = true;
+  catppuccin.wlogout.enable = true;
+  catppuccin.yazi.enable = true;
 }
