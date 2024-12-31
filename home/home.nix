@@ -27,6 +27,7 @@
       wireguard-tools
       yazi
       prismlauncher
+      spotify
 
       wl-clipboard
       iwgtk
