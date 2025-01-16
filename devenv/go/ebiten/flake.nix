@@ -21,6 +21,8 @@
             xorg.libXi
             xorg.libXxf86vm
             python3
+            pkg-config
+            alsa-lib
           ]
           ++ (with python3Packages; [
               ipykernel

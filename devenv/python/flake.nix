@@ -6,7 +6,7 @@
   };
 
   outputs =
-    { stdenv, nixpkgs, ... }:
+    { nixpkgs, ... }:
     let
       system = "x86_64-linux";
     in
@@ -33,7 +33,7 @@
               venvShellHook
             ]);
 
-          LD_LIBRARY_PATH = "${stdenv.cc.cc.lib}/lib";
+          LD_LIBRARY_PATH = "${nixpkgs.stdenv.cc.cc.lib}/lib";
 
           shellHook = ''
             python --version
