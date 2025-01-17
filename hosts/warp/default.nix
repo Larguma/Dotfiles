@@ -100,7 +100,7 @@
     };
   };
   hardware.bluetooth.powerOnBoot = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   services.blueman.enable = true;
   services.pipewire = {
     enable = true;
